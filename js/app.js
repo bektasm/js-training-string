@@ -19,6 +19,19 @@
       isEqual(',,,', new Array(5).toString());
     };
     {
+      var c = "Hi class!" + "Go for gold" + "Yayyy!";
+      
+      isEqual("Hi class! Go for gold, Yayyy!", c);
+    };
+    {
+      var c = "{IT Club}"; // Do not touch this!
+      var a = "KZO"; // Do not touch this!
+      var b = "(Switzerland)" // Do not touch this!
+      var processed = c + (a) + (b);
+      
+      isEqual("{IT Club} [KZO] (Switzerland)", c);
+    };
+    {
       var c = new String("Hi class!");
       var processed = c.concat(" ").concat("Whats")
 
